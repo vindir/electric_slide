@@ -21,7 +21,7 @@ class ElectricSlide
         call = @queue.shift
       end
 
-      call.make_ready!
+      call.make_ready! if call
       call
     end
 
